@@ -2,13 +2,15 @@
 
 ## News
 
+* 10/02/2023: The codes of Surface Prediction Module (SPM) are available.
+
 ## Introduction
 
 **[ICRA'23]** This repository maintains the implementation of "PredRecon: A Prediction-boosted Planning Framework for Fast and High-quality Autonomous Aerial Reconstruction".
 
 <div align=center><img src="imgs/sys_big.png" height=70% width=70% ></div>
 
-**Paper**:
+**Paper**: [PredRecon: A Prediction-boosted Planning Framework for Fast and High-quality Autonomous Aerial Reconstruction](https://arxiv.org/pdf/2302.04488.pdf)
 
 **Complete video**: [Video](https://www.youtube.com/watch?v=ek7yY_FZYAc)
 
@@ -40,13 +42,13 @@ The project has been tested on Ubuntu 20.04 LTS (ROS Noetic). Directly clone our
 
 Then install individual components of **PredRecon**:
 
-* To install Surface Prediction Module, please follow the steps in ``` ./SPM/README.md ```.
+* To install Surface Prediction Module, please follow the steps in [SPM](./SPM/README.md).
 
-* To install Hierarchical Planner, please follow the steps in ``` ./Planner/README.md ```.
+* To install Hierarchical Planner, please follow the steps in [Planner](./Planner/README.md).
 
 ## Quick Start
 
 * Coming soon
 
 ## Acknowledgements
-We use **NLopt** for non-linear optimization and use **LKH** for travelling salesman problem.
+We use **NLopt** for non-linear optimization, use **LKH** for travelling salesman problem, and thank the source code of **mmdetection3d**.
