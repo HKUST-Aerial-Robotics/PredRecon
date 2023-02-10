@@ -10,7 +10,7 @@
 
 <div align=center><img src="imgs/sys_big.png" height=70% width=70% ></div>
 
-**Paper**: [PredRecon: A Prediction-boosted Planning Framework for Fast and High-quality Autonomous Aerial Reconstruction](https://arxiv.org/pdf/2302.04488.pdf)
+**Paper**: [PrePrint_arXiv](https://arxiv.org/pdf/2302.04488.pdf)
 
 **Complete video**: [Video](https://www.youtube.com/watch?v=ek7yY_FZYAc)
 
