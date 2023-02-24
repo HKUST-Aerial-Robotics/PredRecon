@@ -16,7 +16,7 @@
 
 **Authors**: [Chen Feng](https://chen-albert-feng.github.io/AlbertFeng.github.io/), Haojia Li, [Fei Gao](http://zju-fast.com/fei-gao/), [Boyu Zhou](https://boyuzhou.net/), and [Shaojie Shen](https://uav.hkust.edu.hk/group/).
 
-**Institutions**: [HKUST Aerial Robotics Group](https://uav.hkust.edu.hk/), [SYSU RAPID Laboratory](http://lab.sysu-robotics.com/index.html), and [ZJU FASTLab](http://zju-fast.com/fei-gao/).
+**Institutions**: [HKUST Aerial Robotics Group](https://uav.hkust.edu.hk/), [SYSU STAR Group](https://boyuzhou.net/), and [ZJU FASTLab](http://zju-fast.com/fei-gao/).
 
 **PredRecon** is a prediction-boosted planning framework that can efficiently reconstruct high-quality 3D models for the target areas in unknown environments with a single flight. We obtain inspiration from humans can roughly infer the complete construction structure from partial observation. Hence, we devise a surface prediction module (SPM) to predict the coarse complete surfaces of the target from current partial reconstruction. Then, the uncovered surfaces are produced by online volumetric mapping waiting for the observation by UAV. Lastly, a hierarchical planner plans motions for 3D reconstruction, which sequentially find efficient global coverage paths, plans local paths for maximizing the performance of Multi-View Stereo (MVS) and generate smooth trajectories for image-pose pairs acquisition. We conduct benchmark in the realistic simulator, which validates the performance of PredRecon compared with classical and state-of-the-art methods.
 
