@@ -2,7 +2,8 @@
 
 ## News
 
-* 10/02/2023: The codes of Surface Prediction Module (SPM) are available.
+* 06/06/2023: The simulator (AirSim) is available.
+* 10/02/2023: The code of Surface Prediction Module (SPM) is available.
 
 ## Introduction
 
@@ -29,7 +30,7 @@
 
 <div align=center><img src="imgs/bmk.png" height=50% width=50% ></div>
 
-Please kindly star :star: this project if it helps you. We take great efforts to develop and maintain it :grin:.
+Please kindly star ⭐️ this project if it helps you. We take great efforts to develop and maintain it 😁.
 
 ## Installation
 
@@ -43,7 +44,6 @@ The project has been tested on Ubuntu 20.04 LTS (ROS Noetic). Directly clone our
 Then install individual components of **PredRecon**:
 
 * To install Surface Prediction Module, please follow the steps in [SPM](./SPM/README.md).
-
 * To install Hierarchical Planner, please follow the steps in [Planner](./Planner/README.md).
 
 ## Quick Start
@@ -51,4 +51,5 @@ Then install individual components of **PredRecon**:
 * Coming soon
 
 ## Acknowledgements
+
 We use **NLopt** for non-linear optimization, use **LKH** for travelling salesman problem, and thank the source code of **mmdetection3d**.
