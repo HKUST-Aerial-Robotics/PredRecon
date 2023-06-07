@@ -8,6 +8,16 @@
     <strong>Left</strong>: Global Coverage Path Planning, <strong>Right</strong>: Quality-driven Local Path Planning
 </p>
 
+## Setup
+
+* ROS Noetic
+* NVIDIA RTX 3070Ti (Single GPU)
+* CUDA 11.6
+* cuDNN 8.9.0
+* LibTorch 1.12.0-cu116
+* PCL 1.7
+* Eigen3
+
 ## Installation
 
 * [**Pre-requisites**] Make sure 50GB space in your disk.
@@ -30,6 +40,7 @@
   ./setup.sh
   ./build.sh
 ```
+  Download the [setting.json](https://github.com/HKUST-Aerial-Robotics/PredRecon/releases/tag/v1.0) and move it to ```~/Documents/AirSim/settings.json```.
 
 3. Install cuDNN and LibTorch
 
@@ -38,9 +49,11 @@
   https://download.pytorch.org/libtorch/cu116/libtorch-cxx11-abi-shared-with-deps-1.12.0%2Bcu116.zip
 ```
 
-4. Download environments in AirSim
+4. Download environments in AirSim and pre-trained model of SPM in C++ version
 
-  [Palace Env](https://github.com/HKUST-Aerial-Robotics/PredRecon/releases/tag/v1.0/palace.zip)
+  [Palace Env](https://github.com/HKUST-Aerial-Robotics/PredRecon/releases/tag/v1.0)
+  [Village Env](https://github.com/HKUST-Aerial-Robotics/PredRecon/releases/tag/v1.0) (Note: merge village_house_1.zip and village_house_2.zip into village house environment.)
+  [spm.pt](https://github.com/HKUST-Aerial-Robotics/PredRecon/releases/tag/v1.0)
 
 5. Complie the planner
 
