@@ -1,0 +1,12 @@
+<launch>
+	<arg name="uavname" default="fpv" />
+
+	<node pkg="px4ctrl" type="px4ctrl_node" name="px4ctrl" output="screen">
+        <!-- <remap from="~odom" to="/airsim_node/drone_1/odom_local_enu" /> -->
+		<remap from="~odom" to="/airsim_node/control_odom" />
+		<remap from="~cmd" to="/planning/pos_cmd" />
+		<remap from="~imu" to="/airsim_node/drone_1/imu/Imu" />
+        <rosparam command="load" file="$(find px4ctrl)/config/ctrl_param_$(arg uavname).yaml" />
+	</node>
+ 
+</launch>

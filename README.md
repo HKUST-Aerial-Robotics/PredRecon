@@ -2,6 +2,7 @@
 
 ## News
 
+* 20/06/2023: The code of Hierarchical Planner is available.
 * 06/06/2023: The simulator (AirSim) is available.
 * 10/02/2023: The code of Surface Prediction Module (SPM) is available.
 
@@ -48,8 +49,20 @@ Then install individual components of **PredRecon**:
 
 ## Quick Start
 
-* Coming soon
+Open your Unreal Engine platform, then run AirSim simulator in the terminal: 
+```
+  source devel/setup.zsh && roslaunch airsim_ros_pkgs airsim_node.launch
+```
+Firstly, run ```Rviz``` for trajectory visualization:
+```
+  source devel/setup.zsh && roslaunch exploration_manager rviz.launch
+```
+Then, run the simulation:
+```
+  source devel/setup.zsh && roslaunch exploration_manager recon.launch
+```
+All images-pose pairs captured is stored in your given folder, and we recommend [RealityCapture](https://www.capturingreality.com/) as the 3D reconstruction platform.
 
 ## Acknowledgements
 
-We use **NLopt** for non-linear optimization, use **LKH** for travelling salesman problem, and thank the source code of **mmdetection3d**.
+We use **NLopt** for non-linear optimization, use **LKH** for travelling salesman problem, and thank the source code of **mmdetection3d** and **FUEL**.

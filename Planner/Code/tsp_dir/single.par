@@ -1,0 +1,4 @@
+PROBLEM_FILE = /home/albert/UAV_Planning/fuel_airsim/tsp_dir/single.tsp
+GAIN23 = NO
+OUTPUT_TOUR_FILE =/home/albert/UAV_Planning/fuel_airsim/tsp_dir/single.txt
+RUNS = 1

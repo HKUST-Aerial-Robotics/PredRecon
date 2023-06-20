@@ -1,0 +1,38 @@
+<launch>
+	<arg name="output" default="screen"/>
+	<arg name="publish_clock" default="false"/>
+	<arg name="is_vulkan" default="true"/>
+	<arg name="host" default="localhost" />
+
+	<arg name="map_size_x" value="100.0" />
+    <arg name="map_size_y" value="20.0" />
+    <arg name="map_size_z" value="8.0" />
+    <arg name="origin_x" value="-10.0" />
+    <arg name="origin_y" value="-10.0" />
+    <arg name="origin_z" value="-0.5" />
+    <arg name="resolution" value="0.1" />
+	<arg name="vel_limit" value="7.0" />
+	<arg name="acc_limit" value="10.0" />
+
+	<node name="airsim_node" pkg="airsim_ros_pkgs" type="airsim_node" output="$(arg output)">
+		<param name="is_vulkan" type="bool" value="false" /> 
+		<!-- ROS timer rates. Note that timer callback will be processed at maximum possible rate, upperbounded by the following ROS params -->
+		<param name="update_airsim_img_response_every_n_sec" type="double" value="0.01" /> 
+		<param name="update_airsim_control_every_n_sec" type="double" value="0.01" />
+		<param name="update_lidar_every_n_sec" type="double" value="0.05" />
+		<param name="publish_clock" type="bool" value="$(arg publish_clock)" />
+		<param name="world_frame_id" type="string" value="world_enu" />
+		<param name="odom_frame_id" type="string" value="odom_local_enu" />
+		<param name="coordinate_system_enu" type="bool" value="true" />
+		<param name="map_resolution" type="double" value="$(arg resolution)" />
+	</node>
+
+  	<!-- <node pkg="state_machine" type="goal_publisher" name="goal_publisher" output="screen"/>  -->
+
+	<!-- Static transforms -->
+	<include file="$(find airsim_ros_pkgs)/launch/static_transforms.launch"/>
+	<!-- trajectory server -->
+	<!-- <include file="$(find state_machine)/launch/server.launch" /> -->
+	<!-- px4 controller node -->
+	<include file="$(find px4ctrl)/launch/ctrl_md.launch" />
+</launch>
