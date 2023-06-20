@@ -12,7 +12,7 @@
 
 <div align=center><img src="imgs/sys_big.png" height=70% width=70% ></div>
 
-**Paper**: [PrePrint_arXiv](https://arxiv.org/pdf/2302.04488.pdf)
+**Paper**: [arXiv](https://arxiv.org/pdf/2302.04488.pdf)
 
 **Complete video**: [Video](https://www.youtube.com/watch?v=ek7yY_FZYAc)
 
@@ -61,8 +61,10 @@ Then, run the simulation:
 ```
   source devel/setup.zsh && roslaunch exploration_manager recon.launch
 ```
-All images-pose pairs captured is stored in your given folder, and we recommend [RealityCapture](https://www.capturingreality.com/) as the 3D reconstruction platform.
+Trigger the quadrotor to start flight for collecting information by the ```2D Nav Goal``` tool in ```Rviz```.
+
+After the flight, all images-pose pairs captured is stored in your given folder. We recommend [RealityCapture](https://www.capturingreality.com/) or [COLMAP](https://github.com/colmap/colmap) as the 3D reconstruction platform.
 
 ## Acknowledgements
 
-We use **NLopt** for non-linear optimization, use **LKH** for travelling salesman problem, and thank the source code of **mmdetection3d** and **FUEL**.
+We use **NLopt** for non-linear optimization, use **LKH** for travelling salesman problem, and thank the source code of **mmdetection3d** and **[FUEL](https://github.com/HKUST-Aerial-Robotics/FUEL)**.
