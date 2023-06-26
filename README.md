@@ -39,7 +39,7 @@ The project has been tested on Ubuntu 20.04 LTS (ROS Noetic). Directly clone our
 
 ```
   cd ${YOUR_WORKSPACE_PATH}/src
-  git clone git@github.com:HKUST-Aerial-Robotics/PredRecon.git
+  git clone https://github.com/HKUST-Aerial-Robotics/PredRecon.git
 ```
 
 Then install individual components of **PredRecon**:
