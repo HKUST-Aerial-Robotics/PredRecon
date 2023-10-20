@@ -77,7 +77,7 @@ In order to test the model (both *Scale Estimation Header* & *Surface Prediction
 
 ```shell
 python3 train.py --exp_name xxx_sph --ckpt_path log/xxx_sph/all/checkpoints/best_l1_cd.pth --batch_size 16 --num_workers 8 --mode test --header sph &
-python3 train.py --exp_name xxx_seh --ckpt_path log/xxx_seh/all/checkpoints/best_l1_cd.pth --batch_size 16 --num_workers 8 --mode test --header seh
+python3 train.py --exp_name xxx_seh --ckpt_path log/xxx_seh/all/checkpoints/last_epoch.pth --batch_size 16 --num_workers 8 --mode test --header seh
 ```
 
 ## Convert model to C++ lib
