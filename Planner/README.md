@@ -55,6 +55,8 @@
   [Village Env](https://github.com/HKUST-Aerial-Robotics/PredRecon/releases/tag/v1.0) (Note: merge village_house_1.zip and village_house_2.zip into village house environment.)
   [spm.pt](https://github.com/HKUST-Aerial-Robotics/PredRecon/releases/tag/v1.0)
 
+  **Note**: Put trained model into [address](https://github.com/HKUST-Aerial-Robotics/PredRecon/blob/master/Planner/Code/src/fuel_planner/exploration_manager/launch/algorithm.xml#L147) using your own file address.
+
 5. Complie the planner
 
 ```
