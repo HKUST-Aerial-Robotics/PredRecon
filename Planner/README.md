@@ -10,13 +10,14 @@
 
 ## Setup
 
-* ROS Noetic
+* ROS Noetic (Ubuntu 20.04)
 * NVIDIA RTX 3070Ti (Single GPU)
 * CUDA 11.6
 * cuDNN 8.9.0
 * LibTorch 1.12.0-cu116
 * PCL 1.7
 * Eigen3
+* gcc9
 
 ## Installation
 
@@ -40,7 +41,8 @@
   ./setup.sh
   ./build.sh
 ```
-  Download the [setting.json](https://github.com/HKUST-Aerial-Robotics/PredRecon/releases/tag/v1.0) and move it to ```~/Documents/AirSim/settings.json```.
+
+  Download the [setting.json](https://github.com/HKUST-Aerial-Robotics/PredRecon/releases/tag/v1.0) and move it to ``~/Documents/AirSim/settings.json``.
 
 3. Install cuDNN and LibTorch
 

@@ -626,70 +626,70 @@ int main(int argc, char** argv) {
 
   // test();
   // // Initialization for Recon, move upward and downward
-  // /* Yaw Jittering */
-  // for (int i = 0; i < 300; ++i) {
-  //   cmd.yaw += 60.0*M_PI/(180.0*300);
-  //   pos_cmd_pub.publish(cmd);
-  //   ros::Duration(0.01).sleep();
-  // }
-  // ros::Duration(0.2).sleep();
-  // for (int i = 0; i < 600; ++i) {
-  //   cmd.yaw -= 60.0*M_PI/(180.0*300);
-  //   pos_cmd_pub.publish(cmd);
-  //   ros::Duration(0.01).sleep();
-  // }
-  // ros::Duration(0.2).sleep();
-  // for (int i = 0; i < 300; ++i) {
-  //   cmd.yaw += 60.0*M_PI/(180.0*300);
-  //   pos_cmd_pub.publish(cmd);
-  //   ros::Duration(0.01).sleep();
-  // }
-  // ros::Duration(0.2).sleep();
-  // /* Z-axis Jittering */
-  // for (int i = 0; i < 500; ++i) {
-  //   cmd.position.z += 0.01;
-  //   pos_cmd_pub.publish(cmd);
-  //   ros::Duration(0.01).sleep();
-  // }
-  // ros::Duration(0.2).sleep();
-  // for (int i = 0; i < 500; ++i) {
-  //   cmd.position.z -= 0.01;
-  //   pos_cmd_pub.publish(cmd);
-  //   ros::Duration(0.01).sleep();
-  // }
-  // ros::Duration(0.2).sleep();
-  // /* X-axis Jittering */
-  // for (int i = 0; i < 100; ++i) {
-  //   cmd.position.x += 0.01;
-  //   pos_cmd_pub.publish(cmd);
-  //   ros::Duration(0.01).sleep();
-  // }
-  // ros::Duration(0.2).sleep();
-  // for (int i = 0; i < 200; ++i) {
-  //   cmd.position.x -= 0.01;
-  //   pos_cmd_pub.publish(cmd);
-  //   ros::Duration(0.01).sleep();
-  // }
-  // ros::Duration(0.2).sleep();
-  // for (int i = 0; i < 100; ++i) {
-  //   cmd.position.x += 0.01;
-  //   pos_cmd_pub.publish(cmd);
-  //   ros::Duration(0.01).sleep();
-  // }
-  // ros::Duration(0.2).sleep();
-  // /* Y-axis Jittering */
-  // for (int i = 0; i < 550; ++i) {
-  //   cmd.position.y -= 0.01;
-  //   pos_cmd_pub.publish(cmd);
-  //   ros::Duration(0.01).sleep();
-  // }
-  // ros::Duration(0.2).sleep();
-  // for (int i = 0; i < 1350; ++i) {
-  //   cmd.position.y += 0.01;
-  //   pos_cmd_pub.publish(cmd);
-  //   ros::Duration(0.01).sleep();
-  // }
-  // ros::Duration(0.2).sleep();
+  /* Yaw Jittering */
+  for (int i = 0; i < 300; ++i) {
+    cmd.yaw += 60.0*M_PI/(180.0*300);
+    pos_cmd_pub.publish(cmd);
+    ros::Duration(0.01).sleep();
+  }
+  ros::Duration(0.2).sleep();
+  for (int i = 0; i < 600; ++i) {
+    cmd.yaw -= 60.0*M_PI/(180.0*300);
+    pos_cmd_pub.publish(cmd);
+    ros::Duration(0.01).sleep();
+  }
+  ros::Duration(0.2).sleep();
+  for (int i = 0; i < 300; ++i) {
+    cmd.yaw += 60.0*M_PI/(180.0*300);
+    pos_cmd_pub.publish(cmd);
+    ros::Duration(0.01).sleep();
+  }
+  ros::Duration(0.2).sleep();
+  /* Z-axis Jittering */
+  for (int i = 0; i < 500; ++i) {
+    cmd.position.z += 0.01;
+    pos_cmd_pub.publish(cmd);
+    ros::Duration(0.01).sleep();
+  }
+  ros::Duration(0.2).sleep();
+  for (int i = 0; i < 500; ++i) {
+    cmd.position.z -= 0.01;
+    pos_cmd_pub.publish(cmd);
+    ros::Duration(0.01).sleep();
+  }
+  ros::Duration(0.2).sleep();
+  /* X-axis Jittering */
+  for (int i = 0; i < 100; ++i) {
+    cmd.position.x += 0.01;
+    pos_cmd_pub.publish(cmd);
+    ros::Duration(0.01).sleep();
+  }
+  ros::Duration(0.2).sleep();
+  for (int i = 0; i < 200; ++i) {
+    cmd.position.x -= 0.01;
+    pos_cmd_pub.publish(cmd);
+    ros::Duration(0.01).sleep();
+  }
+  ros::Duration(0.2).sleep();
+  for (int i = 0; i < 100; ++i) {
+    cmd.position.x += 0.01;
+    pos_cmd_pub.publish(cmd);
+    ros::Duration(0.01).sleep();
+  }
+  ros::Duration(0.2).sleep();
+  /* Y-axis Jittering */
+  for (int i = 0; i < 550; ++i) {
+    cmd.position.y -= 0.01;
+    pos_cmd_pub.publish(cmd);
+    ros::Duration(0.01).sleep();
+  }
+  ros::Duration(0.2).sleep();
+  for (int i = 0; i < 1350; ++i) {
+    cmd.position.y += 0.01;
+    pos_cmd_pub.publish(cmd);
+    ros::Duration(0.01).sleep();
+  }
+  ros::Duration(0.2).sleep();
 
   // collecting maunally
   ros::Duration(4.0).sleep();
