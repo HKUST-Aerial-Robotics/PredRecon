@@ -80,6 +80,16 @@ Trigger the quadrotor to start flight for collecting information by the ```2D Na
 
 After the flight, all images-pose pairs captured is stored in your given folder. We recommend [RealityCapture](https://www.capturingreality.com/) or [COLMAP](https://github.com/colmap/colmap) as the 3D reconstruction platform.
 
+## Known Issues
+
+You can simply verify whether your AirSim is working properly
+```
+  source devel/setup.zsh && roslaunch airsim_ros_pkgs airsim_node.launch
+  source devel/setup.zsh && roslaunch exploration_manager rviz.launch
+  source devel/setup.zsh && roslaunch exploration_manager init_test.launch
+```
+If AirSim is working correctly, you will see the initial flight of the drone and the mapping results in both AirSim and Rviz.
+
 ## Acknowledgements
 
 We use **NLopt** for non-linear optimization, use **LKH** for travelling salesman problem, and thank the source code of **mmdetection3d** and **[FUEL](https://github.com/HKUST-Aerial-Robotics/FUEL)**.

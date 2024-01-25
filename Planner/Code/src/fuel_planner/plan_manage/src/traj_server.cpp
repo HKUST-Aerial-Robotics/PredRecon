@@ -624,8 +624,7 @@ int main(int argc, char** argv) {
   percep_utils_.reset(new PerceptionUtils(nh));
   TrajectoryGeneratorWaypoint gen;
 
-  // test();
-  // // Initialization for Recon, move upward and downward
+  // Initialization for Recon, move upward and downward
   /* Yaw Jittering */
   for (int i = 0; i < 300; ++i) {
     cmd.yaw += 60.0*M_PI/(180.0*300);
@@ -697,10 +696,6 @@ int main(int argc, char** argv) {
   path << 0.0, 0.0, 2.5, 0.0,
           0.0, -3.0, 1.5, 0.0,
           0.0, 6.0, 1.5, 0.0;
-          // 0.0, -9.0, 1.5, 0.0,
-          // 5.0, -14.0, 1.5, M_PI/2;
-          // 0.0, 12.0, 1.0, 0.0;
-          // 6.0, 15.0, 1.5, -1.571;// turn;
 
   collect_traj(path);
 
