@@ -699,6 +699,8 @@ int main(int argc, char** argv) {
 
   collect_traj(path);
 
+  ROS_INFO("\033[1;32m----> Initial traj has been executed.\033[0m");
+
   R_loop = Eigen::Quaterniond(1, 0, 0, 0).toRotationMatrix();
   T_loop = Eigen::Vector3d(0, 0, 0);
 
