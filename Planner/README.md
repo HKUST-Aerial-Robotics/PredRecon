@@ -14,14 +14,14 @@
 * NVIDIA RTX 3070Ti (Single GPU)
 * CUDA 11.6
 * cuDNN 8.9.0
-* LibTorch 1.12.0-cu116
+* LibTorch 1.12.1-cu116
 * PCL 1.7
 * Eigen3
 * gcc9
 
 ## Installation
 
-* [**Pre-requisites**] Make sure 50GB space in your disk.
+* **[Pre-requisites]** Make sure 50GB space in your disk.
 
 1. Install Unreal Engine
 
@@ -50,6 +50,7 @@
   https://developer.nvidia.com/rdp/cudnn-download
   https://download.pytorch.org/libtorch/cu116/libtorch-cxx11-abi-shared-with-deps-1.12.0%2Bcu116.zip
 ```
+You should change ```Torch_DIR``` in all ```CMakeLists.txt``` as your own LibTorch path, e.g. /home/albert/3rdparty/libtorch/share/cmake/Torch.
 
 4. Download environments in AirSim and pre-trained model of SPM in C++ version
 
@@ -65,3 +66,7 @@
   cd ${YOUR_WORKSPACE_PATH}
   catkin_make -DCMAKE_CUDA_COMPILER=/usr/local/cuda/bin/nvcc
 ```
+
+6. Change prediction model path
+
+You should change ```surf_pred/model_``` in ```src/predrecon/exploration_manager/launch/algorithm.xml``` as your own spm checkpoint path.

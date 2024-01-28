@@ -1,0 +1,25 @@
+NAME : single.1606.tour
+COMMENT : Length = 1606
+COMMENT : Found by LKH [Keld Helsgaun] Mon May 16 18:30:36 2022
+TYPE : TOUR
+DIMENSION : 17
+TOUR_SECTION
+1
+17
+2
+7
+6
+16
+15
+13
+14
+12
+10
+11
+8
+9
+5
+4
+3
+-1
+EOF

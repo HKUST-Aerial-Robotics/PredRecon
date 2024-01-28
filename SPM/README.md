@@ -86,8 +86,10 @@ In order to embed SPM into PredRecon, we distill the trained SPM model into a sm
 
 ```shell
 python3 distillation.py --exp_name distill --teacher_path log/teacher/all/checkpoints/best_l1_cd.pth --epochs 100 --batch_size 8 --coarse_loss cd --num_workers 8 --mode train &
-python3 lib_predictor.py --ckpt_path log/xxx_sph(xxx_seh)/all/checkpoints/best_l1_cd.pth --header sph(seh)
+python3 lib_predictor.py --ckpt_path log/xxx_sph(xxx_seh)/all/checkpoints/best_l1_cd.pth --header sph(or seh) --save_path /home/albert/SPM/sph(or seh).pt
 ```
+
+Note: You should change the example path as your own path in your workspace.
 
 ## Results & Comparison
 

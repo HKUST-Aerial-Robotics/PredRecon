@@ -78,7 +78,7 @@ Then, run the simulation:
 ```
 Trigger the quadrotor to start flight for collecting information by the ```2D Nav Goal``` tool in ```Rviz```.
 
-After the flight, all images-pose pairs captured is stored in your given folder. We recommend [RealityCapture](https://www.capturingreality.com/) or [COLMAP](https://github.com/colmap/colmap) as the 3D reconstruction platform.
+After the flight, all images-pose pairs captured is stored in your given folder. We recommend [RealityCapture](https://www.capturingreality.com/) or [COLMAP](https://github.com/colmap/colmap) as the 3D reconstruction platform. If you want to uae COLMAP in your terminal, you can follow the usage example in [COLMAP Usage](Planner/Code/src/predrecon/plan_manage/script/3D_Colmap.md).
 
 ## Known Issues
 
