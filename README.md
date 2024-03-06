@@ -64,30 +64,41 @@ Then install individual components of **PredRecon**:
 
 ## Quick Start
 
-Open your Unreal Engine platform, then run AirSim simulator in the terminal: 
+You can decide whether saving captured images by changing the parameter ```reconfsm/img_flag``` in [algorithm.xml](./Planner/Code/src/predrecon/exploration_manager/launch/algorithm.xml), where ```true``` for saving and ```false``` for not saving.
+Note: If you set such parameter as ```true```, all captured images will be saved in ```reconfsm/img_dir_```, which can be changed to your own path in [algorithm.xml](./Planner/Code/src/predrecon/exploration_manager/launch/algorithm.xml).
+
+Open your Unreal Engine platform, then run AirSim simulator in the terminal:
+
 ```
   source devel/setup.zsh && roslaunch airsim_ros_pkgs airsim_node.launch
 ```
-Firstly, run ```Rviz``` for trajectory visualization:
+
+Firstly, run ``Rviz`` for trajectory visualization:
+
 ```
   source devel/setup.zsh && roslaunch exploration_manager rviz.launch
 ```
+
 Then, run the simulation:
+
 ```
   source devel/setup.zsh && roslaunch exploration_manager recon.launch
 ```
-Trigger the quadrotor to start flight for collecting information by the ```2D Nav Goal``` tool in ```Rviz```.
+
+Trigger the quadrotor to start flight for collecting information by the ``2D Nav Goal`` tool in ``Rviz``.
 
 After the flight, all images-pose pairs captured is stored in your given folder. We recommend [RealityCapture](https://www.capturingreality.com/) or [COLMAP](https://github.com/colmap/colmap) as the 3D reconstruction platform. If you want to uae COLMAP in your terminal, you can follow the usage example in [COLMAP Usage](Planner/Code/src/predrecon/plan_manage/script/3D_Colmap.md).
 
 ## Known Issues
 
 You can simply verify whether your AirSim is working properly
+
 ```
   source devel/setup.zsh && roslaunch airsim_ros_pkgs airsim_node.launch
   source devel/setup.zsh && roslaunch exploration_manager rviz.launch
   source devel/setup.zsh && roslaunch exploration_manager init_test.launch
 ```
+
 If AirSim is working correctly, you will see the initial flight of the drone and the mapping results in both AirSim and Rviz.
 
 ## Acknowledgements
