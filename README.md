@@ -1,12 +1,12 @@
 # PredRecon
 
-## News
+## 📢 News
 
 * 20/06/2023: The code of Hierarchical Planner is available.
 * 06/06/2023: The simulator (AirSim) is available.
 * 10/02/2023: The code of Surface Prediction Module (SPM) is available.
 
-## Introduction
+## 📜 Introduction
 
 **[ICRA'23]** This repository maintains the implementation of "PredRecon: A Prediction-boosted Planning Framework for Fast and High-quality Autonomous Aerial Reconstruction".
 
@@ -48,7 +48,7 @@ Please cite our paper if you use this project in your research:
 
 Please kindly star ⭐️ this project if it helps you. We take great efforts to develop and maintain it 😁.
 
-## Installation
+## 🛠️ Installation
 
 The project has been tested on Ubuntu 20.04 LTS (ROS Noetic). Directly clone our package (using ssh here):
 
@@ -62,7 +62,7 @@ Then install individual components of **PredRecon**:
 * To install Surface Prediction Module, please follow the steps in [SPM](./SPM/README.md).
 * To install Hierarchical Planner, please follow the steps in [Planner](./Planner/README.md).
 
-## Quick Start
+## 🚀 Quick Start
 
 You can decide whether saving captured images by changing the parameter ```reconfsm/img_flag``` in [algorithm.xml](./Planner/Code/src/predrecon/exploration_manager/launch/algorithm.xml), where ```true``` for saving and ```false``` for not saving.
 Note: If you set such parameter as ```true```, all captured images will be saved in ```reconfsm/img_dir_```, which can be changed to your own path in [algorithm.xml](./Planner/Code/src/predrecon/exploration_manager/launch/algorithm.xml).
@@ -89,7 +89,7 @@ Trigger the quadrotor to start flight for collecting information by the ``2D Nav
 
 After the flight, all images-pose pairs captured is stored in your given folder. We recommend [RealityCapture](https://www.capturingreality.com/) or [COLMAP](https://github.com/colmap/colmap) as the 3D reconstruction platform. If you want to uae COLMAP in your terminal, you can follow the usage example in [COLMAP Usage](Planner/Code/src/predrecon/plan_manage/script/3D_Colmap.md).
 
-## Known Issues
+## 💥 Known Issues
 
 You can simply verify whether your AirSim is working properly
 
@@ -101,6 +101,18 @@ You can simply verify whether your AirSim is working properly
 
 If AirSim is working correctly, you will see the initial flight of the drone and the mapping results in both AirSim and Rviz.
 
-## Acknowledgements
+## ❣️ Acknowledgements
 
 We use **NLopt** for non-linear optimization, use **LKH** for travelling salesman problem, and thank the source code of **mmdetection3d** and **[FUEL](https://github.com/HKUST-Aerial-Robotics/FUEL)**.
+
+## 🤗 FC-family Works
+
+#### 1. What is FC-family?
+
+We aim to develop intelligent perception-centric flight to realize ***F***ast ***C***overage / re***C***onstruction / inspe***C***tion etc.
+
+#### 2. Projects list
+
+* [PredRecon](https://github.com/HKUST-Aerial-Robotics/PredRecon) (ICRA2023): Prediction-boosted Planner for Aerial Reconstruction.
+* [FC-Planner](https://github.com/HKUST-Aerial-Robotics/FC-Planner) (ICRA2024): Highly Efficient Global Planner for Aerial Coverage.
+* [SOAR](https://github.com/SYSU-STAR/SOAR) (IROS2024): Heterogenous Multi-UAV Planner for Aerial Reconstruction.
