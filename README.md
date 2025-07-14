@@ -10,7 +10,7 @@
 
 **[ICRA'23]** This repository maintains the implementation of "PredRecon: A Prediction-boosted Planning Framework for Fast and High-quality Autonomous Aerial Reconstruction".
 
-<div align=center><img src="imgs/sys_big.png" height=70% ></div>
+<div align=center><img src="imgs/sys_big.png" height = "240" ></div>
 
 **Paper**: [arXiv](https://arxiv.org/pdf/2302.04488.pdf), [IEEE](https://ieeexplore.ieee.org/document/10160933)
 
@@ -44,7 +44,7 @@ Please cite our paper if you use this project in your research:
   <img src="imgs/house_recon.gif" width = "400" height = "240"/>
 </p>
 
-<div align=center><img src="imgs/bmk.png" height=50% ></div>
+<div align=center><img src="imgs/bmk.png" height = "240" ></div>
 
 Please kindly star ⭐️ this project if it helps you. We take great efforts to develop and maintain it 😁.
 
